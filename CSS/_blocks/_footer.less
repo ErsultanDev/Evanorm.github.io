@@ -1,0 +1,144 @@
+//main: ..//style.less
+
+.footer {
+    padding: 90px 0;
+    background: url(../../images/dest/footerbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .footer_end {
+
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer_delivery {
+        h3 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .footer_delivery_cards {
+            margin-top: 50px;
+            display: flex;
+
+            .footer_delivery_card {
+                border-right: 1px solid #F44172;
+                padding: 0 20px;
+
+                p {
+                    font-size: 24px;
+                }
+
+                &:last-child {
+                    border-left: 0;
+
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        margin: 100px auto auto auto;
+        width: 200px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width:966px) {
+
+    .footer {
+        .footer_wrapper {
+            flex-direction: column-reverse;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .footer_delivery {
+            .footer_delivery_cards {
+                flex-direction: column;
+
+                .footer_delivery_card {
+                    width: 300px;
+                    margin: 0 auto;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:425px) {
+
+    .footer {
+        .footer_wrapper {
+            padding: 0 30px;
+
+            h2 {
+                font-size: 23px;
+            }
+        }
+
+        .footer_delivery {
+            h3 {
+                font-size: 24px;
+            }
+
+            .footer_delivery_cards {
+                margin-top: 20px;
+
+                .footer_delivery_card {
+                    margin-bottom: 30px;
+
+                    p {
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+        .footer_bottom{
+            margin: 70px auto auto auto ;
+            width: 140px;
+
+        }
+    }
+
+}
+
+@media screen and(max-width:375px) {
+    .footer {
+        .footer_wrapper{
+            padding: 0 30px;
+            width: auto;
+            h2{
+                font-size: 16px;
+            }
+            h4{
+                font-size: 16px;
+            }
+        }
+    }
+}
